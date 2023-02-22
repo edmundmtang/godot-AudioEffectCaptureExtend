@@ -3,7 +3,8 @@ libpath/*
 
 # everything from godot-cpp, necessary to compile the GDNative code
 godot-cpp/*
+core/*
 
 # object files
 *.obj
-
+*.dll

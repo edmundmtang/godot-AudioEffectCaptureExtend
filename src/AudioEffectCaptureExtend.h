@@ -4,6 +4,10 @@
 #include <Godot.hpp>
 #include <AudioEffectCapture.hpp>
 
+#ifndef CLAMP
+#define CLAMP(m_a, m_min, m_max) (((m_a) < (m_min)) ? (m_min) : (((m_a) > (m_max)) ? m_max : m_a))
+#endif
+
 namespace godot {
 
 class AudioEffectCaptureExtend : public AudioEffectCapture {
@@ -19,7 +23,7 @@ public:
 	AudioEffectCaptureExtend();
 	~AudioEffectCaptureExtend();
 
-	int print_me();
+	PoolByteArray get_buffer_alt(int p_len);
 
 };
 	
