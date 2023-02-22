@@ -1,0 +1,9 @@
+# External Libraries
+libpath/*
+
+# everything from godot-cpp, necessary to compile the GDNative code
+godot-cpp/*
+
+# object files
+*.obj
+
