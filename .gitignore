@@ -5,6 +5,7 @@ libpath/*
 godot-cpp/*
 core/*
 
-# object files
+# scons outputs
+src/win64/*
 *.obj
 *.dll
