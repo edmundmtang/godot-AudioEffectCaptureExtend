@@ -23,7 +23,7 @@ public:
 	AudioEffectCaptureExtend();
 	~AudioEffectCaptureExtend();
 
-	PoolByteArray get_buffer_alt(int p_len);
+	PoolByteArray get_buffer_uint8(int p_len);
 
 };
 	

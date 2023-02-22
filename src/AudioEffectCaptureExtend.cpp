@@ -4,7 +4,7 @@ using namespace godot;
 
 void AudioEffectCaptureExtend::_register_methods() {
 
-	register_method("get_buffer_alt", &AudioEffectCaptureExtend::get_buffer_alt);
+	register_method("get_buffer_uint8", &AudioEffectCaptureExtend::get_buffer_uint8);
 	
 }
 
@@ -17,7 +17,7 @@ AudioEffectCaptureExtend::AudioEffectCaptureExtend() {
 AudioEffectCaptureExtend::~AudioEffectCaptureExtend() {
 }
 
-PoolByteArray AudioEffectCaptureExtend::get_buffer_alt(int p_frames) {
+PoolByteArray AudioEffectCaptureExtend::get_buffer_uint8(int p_frames) {
 	PoolVector2Array vdata = get_buffer(p_frames);
 	PoolByteArray data;
 	data.resize(p_frames);

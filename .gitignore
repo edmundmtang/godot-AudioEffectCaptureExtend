@@ -6,6 +6,7 @@ godot-cpp/*
 core/*
 
 # scons outputs
+*.dblite
 src/win64/*
 *.obj
 *.dll
