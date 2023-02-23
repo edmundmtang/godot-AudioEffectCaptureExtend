@@ -15,6 +15,7 @@ class AudioEffectCaptureExtend : public AudioEffectCapture {
 	
 private:
 	int test_val;
+	inline unsigned int encode_uint16(uint16_t p_uint, uint8_t *p_arr);
 	
 public:
 	static void _register_methods();
@@ -24,6 +25,7 @@ public:
 	~AudioEffectCaptureExtend();
 
 	PoolByteArray get_buffer_uint8(int p_len);
+	PoolByteArray get_buffer_uint16(int p_len);
 
 };
 	
